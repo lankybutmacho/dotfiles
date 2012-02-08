@@ -167,3 +167,8 @@ let g:ctrlp_working_path_mode = 1
 :imap <C-S-tab> <ESC>:tabprevious<cr>i
 :imap <C-tab> <ESC>:tabnext<cr>i
 :imap <C-t> <ESC>:tabnew<cr>
+
+"------------------------------------------------------------
+" File types
+"------------------------------------------------------------
+au BufNewFile,BufRead *.txt setfiletype markdown
