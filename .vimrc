@@ -152,6 +152,7 @@ nnoremap <C-L> :nohl<CR><C-L>
 
 call pathogen#infect()
 let g:ctrlp_working_path_mode = 1
+let g:scroll_factor = 5000
 
 "------------------------------------------------------------
 " Tab stuff
