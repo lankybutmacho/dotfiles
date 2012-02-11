@@ -173,3 +173,4 @@ let g:scroll_factor = 5000
 " File types
 "------------------------------------------------------------
 au BufNewFile,BufRead *.txt setfiletype markdown
+au BufNewFile,BufRead *.erb setfiletype ruby
