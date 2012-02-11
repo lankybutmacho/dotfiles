@@ -151,7 +151,7 @@ nnoremap <C-L> :nohl<CR><C-L>
 "------------------------------------------------------------
 
 call pathogen#infect()
-let g:ctrlp_working_path_mode = 1
+let g:ctrlp_working_path_mode = 0
 let g:scroll_factor = 5000
 
 "------------------------------------------------------------
@@ -164,7 +164,7 @@ let g:scroll_factor = 5000
 :map <C-t> :tabnew<cr>
 :map <C-S-tab> :tabprevious<cr>
 :map <C-tab> :tabnext<cr>
-:map <C-w> :tabclose<cr>
+" :map <C-w> :tabclose<cr>
 :imap <C-S-tab> <ESC>:tabprevious<cr>i
 :imap <C-tab> <ESC>:tabnext<cr>i
 :imap <C-t> <ESC>:tabnew<cr>
