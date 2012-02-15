@@ -174,5 +174,5 @@ au BufNewFile,BufRead *.less setfiletype less
 "------------------------------------------------------------
 
 call pathogen#infect()
-let g:ctrlp_working_path_mode = 1
+let g:ctrlp_working_path_mode = 0
 let g:scroll_factor = 10000
