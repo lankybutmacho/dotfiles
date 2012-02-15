@@ -147,13 +147,6 @@ map Y y$
 " next search
 nnoremap <C-L> :nohl<CR><C-L>
 
-
-"------------------------------------------------------------
-
-call pathogen#infect()
-let g:ctrlp_working_path_mode = 0
-let g:scroll_factor = 5000
-
 "------------------------------------------------------------
 " Tab stuff
 "------------------------------------------------------------
@@ -174,3 +167,12 @@ let g:scroll_factor = 5000
 "------------------------------------------------------------
 au BufNewFile,BufRead *.txt setfiletype markdown
 au BufNewFile,BufRead *.erb setfiletype ruby
+au BufNewFile,BufRead *.less setfiletype less
+
+"------------------------------------------------------------
+" Misc
+"------------------------------------------------------------
+
+call pathogen#infect()
+let g:ctrlp_working_path_mode = 1
+let g:scroll_factor = 10000

@@ -1,6 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_cnt =5
 let g:netrw_dirhist_1='/Users/matt/.git/foursquare.web'
 let g:netrw_dirhist_2='/Users/matt/.git/foursquare.web/web'
 let g:netrw_dirhist_3='/Users/matt/.git/foursquare.web/web/src'
 let g:netrw_dirhist_4='/Users/matt/.git/foursquare.web/web/src/main'
+let g:netrw_dirhist_5='/export/hdc3/homedata/matt/foursquare.web/web/src/main/webapp'
