@@ -1,4 +1,29 @@
-hardstatus on
+# from http://www.mattcutts.com/blog/screen-power-tips-screenrc/
+autodetach on
+startup_message off
+defscrollback 30000
+
+# from http://www.frexx.de/xterm-256-notes/
+# terminfo and termcap for nice 256 color terminal
+# allow bold colors - necessary for some reason
+attrcolor b ".I"
+# tell screen how to set colors. AB = background, AF=foreground
+# added is to keep it from resizing the window
+termcapinfo xterm|xterm-256color 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm:is=\E[r\E[m\E[2J\E[H\E[?7h\E[?1;4;6l'
+# erase background with current bg color
+defbce "on"
+
+# always show the window list and status line.
+# Magentaaa!
 hardstatus alwayslastline
-hardstatus string '%{= kW}%-Lw%{= KW}%50>%n%f* %t%{= kW}%+Lw%< %{= kG}%-=%D %d %M %Y %c:%s%{-}'
+hardstatus string '%02=%0>%{= kw}%-Lw%50>%{=b mw} %n %t %{= kw}%+Lw%{= kw}%-1<%{-}%{=dd}'
+caption always "%?%F%{=b mW}%:%{= bW}%? [%n] %t - %h %-050=%H%-027= %D %d %M %Y, %c:%s %{= .b}%{-}%{=dd}"
+# hardstatus string "(%n) %t"
+# caption (number, title, time w/ seconds)
+# caption always "(%n) %t:%c:%s"
+
+# 256 colors
+term screen-256color
+
+# use bash as a login shell
 shell -bash
